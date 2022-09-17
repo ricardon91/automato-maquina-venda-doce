@@ -1,0 +1,6 @@
+<h4>Selecione o Item:</h4>
+<select class="form-control" [(ngModel)]="codigoDoce" (change)="onClick()">
+  <option *ngFor="let doce of doces" value="{{ doce.codigo }}">
+    {{ doce.nome }}
+  </option>
+</select>

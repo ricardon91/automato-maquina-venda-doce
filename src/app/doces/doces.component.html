@@ -1,0 +1,9 @@
+<ul class="item-list">
+  <li class="item" *ngFor="let doce of doces">
+    <span class="bold">{{ doce.codigo }}:</span>
+    <span
+      >{{ doce.nome }} - {{ doce.valor | currency: "BRL":true }} - Quantidade
+      restante: {{ doce.restante }}</span
+    >
+  </li>
+</ul>
