@@ -2,21 +2,21 @@
   "doces": [
     {
       "id": 1,
-      "nome": "Sonho de Valsa",
-      "valor": 2.0,
+      "nome": "Doce A",
+      "valor": 6.0,
       "restante": 9,
       "codigo": "A"
     },
     {
       "id": 2,
-      "nome": "KitKat",
-      "valor": 5.0,
+      "nome": "Doce B",
+      "valor": 7.0,
       "restante": 12,
       "codigo": "B"
     },
     {
       "id": 3,
-      "nome": "Cookies",
+      "nome": "Doce C",
       "valor": 8.0,
       "restante": 20,
       "codigo": "C"
