@@ -1,6 +1,6 @@
 <p class="display -sm-width">
   {{ saldoNotas ? (saldoNotas | currency: "BRL":true) : "Inserir nota" }}
 </p>
-<button class="button -yellow" (click)="adicionarSaldo(1)">R$1,00</button>
-<button class="button -blue" (click)="adicionarSaldo(2)">R$2,00</button>
-<button class="button -green" (click)="adicionarSaldo(5)">R$5,00</button>
+<button class="button -yellow" id="yellow" (click)="adicionarSaldo(1)">R$1,00</button>
+<button class="button -blue" id="blue" (click)="adicionarSaldo(2)">R$2,00</button>
+<button class="button -green" id="green" (click)="adicionarSaldo(5)">R$5,00</button>

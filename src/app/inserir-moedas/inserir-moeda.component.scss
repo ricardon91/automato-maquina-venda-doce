@@ -25,5 +25,38 @@ section {
 }
 
 .display.-sm-width {
-  max-width: 130px;
+  max-width: 208px;
+  text-align: center;
+  margin-top: 2%;
 }
+
+#yellow {
+  margin: 0 5px;
+  background-color: #FFC0CB;
+}
+
+#yellow:hover{
+  background-color: #DB7093;
+
+}
+
+#blue {
+  margin: 0 5px;
+  background-color: #FFC0CB;
+
+}
+
+#blue:hover {
+  background-color: #DB7093;
+}
+
+#green {
+  margin: 0 5px;
+  background-color: #FFC0CB;
+
+}
+
+#green:hover {
+  background-color: #DB7093;
+}
+
