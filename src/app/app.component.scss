@@ -1,4 +1,17 @@
 .container {
-    width: 100%;
-    height: 100%;
+  text-align: center;
+  height: 100%;
+    margin: auto;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background: cover;
+    background-position: center;
+}
+.containerInterno {
+  display: inline-block;
+    vertical-align: middle;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 170px;
 }
