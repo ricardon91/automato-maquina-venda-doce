@@ -2,24 +2,24 @@
   {{ saldoNotas ? (saldoNotas | currency: "BRL":true) : "Inserir nota" }}
 </p>
 <button
-  class="button -yellow third"
-  id="yellow"
+  class="third"
+  id="button-pink"
   (click)="adicionarSaldo(1)"
   [disabled]="saldoNotas >= 8"
 >
   R$1,00
 </button>
 <button
-  class="button -blue third"
-  id="blue"
+  class="third"
+  id="button-pink"
   (click)="adicionarSaldo(2)"
   [disabled]="saldoNotas >= 8"
 >
   R$2,00
 </button>
 <button
-  class="button -green third"
-  id="green"
+  class="third"
+  id="button-pink"
   (click)="adicionarSaldo(5)"
   [disabled]="saldoNotas >= 8"
 >
