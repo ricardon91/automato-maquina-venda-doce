@@ -1,0 +1,64 @@
+body {
+  /* Uncomment this to enable scrolling and zooming
+  touch-action: manipulation;
+  */
+
+  padding: 30px;
+  background: #ccc;
+  font: 24px;
+}
+
+input[type="button"] {
+  width: 35px;
+}
+
+div.panel div {
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  background: white;
+  box-shadow: 0 0 3px gray;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.clear {
+  clear: both;
+}
+
+div.panel {
+  width: 150px;
+}
+div.panel div.on {
+  background: #ffff00;
+}
+
+.floors li {
+  margin-bottom: 6px;
+}
+.floors span {
+  width: 60px;
+  display: block;
+  float: left;
+}
+.floors .on {
+  background: #ffff00;
+}
+
+.display {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none !important;
+}

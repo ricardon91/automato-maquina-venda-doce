@@ -1,0 +1,35 @@
+<ul class="floors">
+  <li *ngFor="let repAndar of representacaoAndares; let i = index">
+    <span>Andar {{ repAndar.length - i }}</span>
+    <input
+      type="button"
+      [ngClass]="repAndar.esperandoSubir > 0 ? 'on' : 'off'"
+      (click)="pedirSubir(repAndar)"
+      value="▲"
+    />
+    <input
+      type="button"
+      [ngClass]="repAndar.esperandoDescer > 0 ? 'on' : 'off'"
+      (click)="pedirDescer(repAndar)"
+      value="▼"
+    />
+  </li>
+</ul>
+<br />
+<div class="panel">
+  <h3>Painel de Controle</h3>
+  <div
+    [ngClass]="andar.pressionouPainel ? 'on' : 'off'"
+    *ngFor="let andar of andares; let i = index"
+    (click)="irParaAndar(andar)"
+  >
+    {{ i + 1 }}
+  </div>
+</div>
+
+<div class="clear"></div>
+<div class="display">
+  Andar atual {{ andarAtual + 1 }}
+  <em [hidden]="!isIndoParaCima || estaParado">▲</em>
+  <em [hidden]="isIndoParaCima || !fezSolicitacao(isIndoParaCima)">▼</em>
+</div>

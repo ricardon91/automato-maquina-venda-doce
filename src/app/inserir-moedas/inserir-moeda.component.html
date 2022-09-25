@@ -1,28 +1,34 @@
-<p class="display -sm-width titulo-principal">
-  {{ saldoNotas ? (saldoNotas | currency: "BRL":true) : "Inserir nota" }}
-</p>
-<button
-  class="third"
-  id="button-pink"
-  (click)="adicionarSaldo(1)"
-  [disabled]="saldoNotas >= 8"
->
-  R$1,00
-</button>
-<button
-  class="third"
-  id="button-pink"
-  (click)="adicionarSaldo(2)"
-  [disabled]="saldoNotas >= 8"
->
-  R$2,00
-</button>
-<button
-  class="third"
-  id="button-pink"
-  (click)="adicionarSaldo(5)"
-  [disabled]="saldoNotas >= 8"
->
-  R$5,00
-</button>
-
+<div class="container" style="background-image: url(../assets/cyber5.gif)">
+  <div class="containerInterno">
+    <p class="display -sm-width titulo-principal">
+      {{ saldoNotas ? (saldoNotas | currency: "BRL":true) : "Inserir nota" }}
+    </p>
+    <button
+      class="third"
+      id="button-pink"
+      (click)="adicionarSaldo(1)"
+      [disabled]="saldoNotas >= 8"
+    >
+      R$1,00
+    </button>
+    <button
+      class="third"
+      id="button-pink"
+      (click)="adicionarSaldo(2)"
+      [disabled]="saldoNotas >= 8"
+    >
+      R$2,00
+    </button>
+    <button
+      class="third"
+      id="button-pink"
+      (click)="adicionarSaldo(5)"
+      [disabled]="saldoNotas >= 8"
+    >
+      R$5,00
+    </button>
+    <app-doces></app-doces>
+    <app-doce-selecionado></app-doce-selecionado>
+    <app-comprar-doce></app-comprar-doce>
+  </div>
+</div>

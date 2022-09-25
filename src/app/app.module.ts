@@ -11,6 +11,8 @@ import { InserirMoedaComponent } from './inserir-moedas/inserir-moeda.component'
 import { DoceSelecionadoComponent } from './doce-selecionado/doce-selecionado.component';
 import { FormsModule } from '@angular/forms';
 import { ComprarDoceComponent } from './comprar-doce/comprar-doce.component';
+import { HomeComponent } from './home/home.component';
+import { ElevadorComponent } from './elevador/elevador.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { ComprarDoceComponent } from './comprar-doce/comprar-doce.component';
     DocesComponent,
     DoceSelecionadoComponent,
     ComprarDoceComponent,
+    HomeComponent,
+    ElevadorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [SaldoService],
