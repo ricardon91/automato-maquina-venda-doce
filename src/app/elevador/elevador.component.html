@@ -1,6 +1,6 @@
 <ul class="floors">
   <li *ngFor="let repAndar of representacaoAndares; let i = index">
-    <span>Andar {{ repAndar.length - i }}</span>
+    <span>Andar {{ representacaoAndares.length - i }}</span>
     <input
       type="button"
       [ngClass]="repAndar.esperandoSubir > 0 ? 'on' : 'off'"
