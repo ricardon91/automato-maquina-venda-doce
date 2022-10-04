@@ -71,8 +71,8 @@ section {
 .container {
   text-align: center;
   height: 100%;
-  margin: auto;
-  max-width: 1440px;
+  margin: 0 auto !important;
+  max-width: 100%;
   background-repeat: no-repeat;
   background: cover;
   background-position: center;
