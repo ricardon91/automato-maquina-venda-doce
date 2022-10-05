@@ -1,11 +1,24 @@
-body {
-  /* Uncomment this to enable scrolling and zooming
-  touch-action: manipulation;
-  */
 
-  padding: 30px;
-  background: #ccc;
-  font: 24px;
+.container {
+  text-align: center;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.containerInterno {
+  background-color: #0000;
+  display: inline-block;
+  vertical-align: middle;
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 input[type="button"] {
@@ -30,20 +43,36 @@ div.panel div {
   margin-right: 8px;
   margin-bottom: 8px;
 }
-
+.panel h3 {
+  color: #ffff00;
+}
+.panel .off {
+  margin: 10px 25px 10px 22px;
+}
+.display {
+  color: #fff;
+}
 .clear {
   clear: both;
-}
-
-div.panel {
-  width: 150px;
 }
 div.panel div.on {
   background: #ffff00;
 }
-
+ul.floors {
+  padding: 0px;
+  align-items: center;
+  text-align: center;
+}
+.display {
+  margin-top: 40px;
+}
 .floors li {
-  margin-bottom: 6px;
+  margin-bottom: 20px;
+    list-style: none;
+    color: #fff;
+    font-size: 16px;
+    text-align: inherit;
+    margin-left: 55px;
 }
 .floors span {
   width: 60px;
@@ -53,12 +82,10 @@ div.panel div.on {
 .floors .on {
   background: #ffff00;
 }
-
 .display {
   font-size: 30px;
   font-weight: bold;
 }
-
 .hidden {
   display: none !important;
 }

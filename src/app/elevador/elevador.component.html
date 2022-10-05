@@ -1,3 +1,5 @@
+<div class="container" style="background-image: url(../assets/elevador.jpeg)">
+  <div class="containerInterno">
 <ul class="floors">
   <li *ngFor="let repAndar of representacaoAndares; let i = index">
     <span>Andar {{ representacaoAndares.length - i }}</span>
@@ -32,4 +34,6 @@
   Andar atual {{ andarAtual + 1 }}
   <em [hidden]="!isIndoParaCima || estaParado">▲</em>
   <em [hidden]="isIndoParaCima || !fezSolicitacao(isIndoParaCima)">▼</em>
+</div>
+</div>
 </div>
